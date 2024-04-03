@@ -1,23 +1,31 @@
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
+import Body from "./components/Body";
 
-const items = {
+const navbarItems = {
   text1:"How Does it Affect you",
   text2:"Balance of Gaming",
   image:"./images/logo.png"
 };
 
 
-const items1 = {
+const headerItems = {
   image1:"/images/image1.jpg",
   image2:"/images/image2.jpg",
+  image3:"/images/image3.jpg"
+}
+
+const bodyItems = {
+  image1:"/images/image4.jpeg",
+
 }
 
 export default function Home() {
   return (
     <div>
-      <Navbar items={items} />
-      <Header items1={items1}/> 
+      <Navbar navbarItems={navbarItems} />
+      <Header headerItems={headerItems}/> 
+      <Body  bodyItems={bodyItems}/>
     </div>
   );
 }
