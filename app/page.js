@@ -2,11 +2,11 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Body from "./components/Body";
 
-const navbarItems = {
-  text1:"How Does it Affect you",
-  text2:"Balance of Gaming",
-  image:"./images/logo.png"
-};
+// const navbarItems = {
+//   text1:"How Does it Affect you",
+//   text2:"Balance of Gaming",
+//   image:"./images/logo.png"
+// };
 
 
 const headerItems = {
@@ -20,10 +20,10 @@ const bodyItems = {
 
 }
 
-export default function Home() {
+export default function Main() {
   return (
     <div>
-      <Navbar navbarItems={navbarItems} />
+      <Navbar />
       <Header headerItems={headerItems}/> 
       <Body  bodyItems={bodyItems}/>
     </div>

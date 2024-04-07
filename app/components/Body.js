@@ -2,6 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 
+
 const Body = ({ bodyItems }) => {
     return (
         <div className="py-32 pl-48 pr-64">
@@ -15,7 +16,7 @@ const Body = ({ bodyItems }) => {
                 />
                 </div>
                 <div>
-                    <h1 className="text-6xl font-bold text-black">Lorem Ipsum</h1>
+                <a id="target-component"><h1 className="text-6xl font-bold text-black">Lorem Ipsum</h1></a>
                     <p>evjwefjewqifjewiofnewjfnew</p>
                 </div>
             </div>
@@ -29,7 +30,7 @@ const Body = ({ bodyItems }) => {
                 />
                 </div>
                 <div>
-                    <h1 className="text-6xl font-bold text-black">Lorem Ipsum</h1>
+                <a id="another-component"><h1 className="text-6xl font-bold text-black">Lorem Ipsum</h1></a>
                     <p>evjwefjewqifjewiofnewjfnew</p>
                 </div>
             </div>
