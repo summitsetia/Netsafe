@@ -1,6 +1,7 @@
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Body from "./components/Body";
+import Links from "./components/Links";
 
 // const navbarItems = {
 //   text1:"How Does it Affect you",
@@ -26,6 +27,7 @@ export default function Main() {
       <Navbar />
       <Header headerItems={headerItems}/> 
       <Body  bodyItems={bodyItems}/>
+      <Links />
     </div>
   );
 }
