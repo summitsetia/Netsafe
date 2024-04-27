@@ -1,17 +1,21 @@
-import React from 'react'
+import React from 'react';
 
-const Hero = ({data}) => {
+const Hero = ({ data }) => {
     return (
-        <div className='py-32 bg-black text-white'>
-            <div className="flex justify-center">
-                <h1 className='text-8xl'>{data.text1}</h1>
-            </div>
-            <div className="flex justify-center">
-                <p>{data.text2}</p>
+        <div className="relative">
+            <video autoPlay loop muted className="absolute inset-0 w-full h-full object-cover bg-opacity-50">
+                <source src={data.video}/>
+            </video>
+            <div className="relative py-32 bg-black bg-opacity-50 text-white">
+                <div className="flex justify-center">
+                    <h1 className="text-8xl">{data.text1}</h1>
+                </div>
+                <div className="flex justify-center">
+                    <p>{data.text2}</p>
+                </div>
             </div>
         </div>
-        
-    )
-}
+    );
+};
 
 export default Hero;
