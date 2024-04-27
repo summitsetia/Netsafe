@@ -1,5 +1,7 @@
+'use client'
 import React from 'react';
 import Image from 'next/image'
+import dataSheet from "./dataSheet";
 
 const Boxes = ({ text, image }) => {
     return (
@@ -24,45 +26,23 @@ const Boxes = ({ text, image }) => {
 };
 
 export default function Links() {
-    const data = [
-        {
-            id: 1,
-            url: "",
-            img: "/images/vertical.jpg",
-            text: "hello"
-        },
-        {
-            id: 2,
-            url: "",
-            img: "/images/vertical.jpg",
-            text: "hi"
-        },
-        {
-            id: 3,
-            url: "",
-            img: "/images/vertical.jpg",
-            text: "hey"
-        },
-        {
-            id: 4,
-            url: "",
-            img: "/images/vertical.jpg",
-            text: "wsg"
-        },
-        {
-            id: 5,
-            url: "",
-            img: "/images/vertical.jpg",
-            text: "howdy"
-        },
-    ];
+    const [link, setLink] = React.useState(dataSheet)
 
-    const boxElements = data.map(box => {
+    function updateLinks () {
+
+    }
+
+    const boxElements = link.map(box => {
         return <Boxes key={box.id} text={box.text} image={box.img} url={box.url}/>;
     });
 
     return (
-        <div className="flex flex-row ml-48 ">{boxElements}</div>
+        <div>
+            <div>
+                <button className="text-8xl" onClick={updateLinks}>Random</button>
+            </div>
+            <div className="flex flex-row ml-48 ">{boxElements}</div>
+        </div>
     );
 }
  

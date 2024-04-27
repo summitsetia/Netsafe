@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Introduction = ({data}) => {
     return (
-        <div className='py-32 pl-48 pr-64'>
+        <div className='py-32 pl-48 pr-48'>
             <div className='flex justify-between'>
                 <div className="">
                     <Image
