@@ -24,6 +24,10 @@ const page = () => {
     {id:6, image: "/images/image2.jpg", text1:"", text2:""},
     {id:7, image: "/images/image3.jpg", text1:"", text2:""},
     {id:8, image: "/images/image4.jpeg", text1:"", text2:""},
+    {id:9, image: "/images/image1.jpg", text1:"", text2:""},
+    {id:10, image: "/images/image2.jpg", text1:"", text2:""},
+    {id:11, image: "/images/image3.jpg", text1:"", text2:""},
+    {id:12, image: "/images/image4.jpeg", text1:"", text2:""},
 ]
   return (
     <div>

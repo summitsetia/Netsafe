@@ -20,9 +20,9 @@ const Body = ({ bodyItems }) => {
                 <h1 className="text-6xl font-bold text-black" >Lorem Ipsum</h1>
                     <p>evjwefjewqifjewiofnewjfnew</p>
                     <Link href="/main"><button>Navigate</button></Link>
-                </div>
+                </div >
             </div>
-            <div className="flex justify-between" id="another-component">
+            <div className="flex justify-between" id="another-component" >
                 <div>
                     <Image
                     src={bodyItems.image1}

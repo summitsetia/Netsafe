@@ -1,9 +1,8 @@
 'use client'
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
 
-
-const Modal = ({image}) => {
+const Modal = ({ image }) => {
     const [isOpen, setIsOpen] = React.useState(false);
 
     const toggleModal = () => {
@@ -13,14 +12,14 @@ const Modal = ({image}) => {
     return (
         <div>
             <div>
-            <Image
-                height={250}
-                width={250}
-                src={image} 
-                alt="Open Modal"
-                onClick={toggleModal} 
-                className="cursor-pointer" 
-            />
+                <Image
+                    height={250}
+                    width={250}
+                    src={image} 
+                    alt="Open Modal"
+                    onClick={toggleModal} 
+                    className="cursor-pointer" 
+                />
             </div>
 
             {isOpen && (
@@ -38,12 +37,10 @@ const Modal = ({image}) => {
     );
 };
 
-
-const Grid = ({data}) => {
-
-const dataElements = data.map(element => {
-    return <Modal key={element.id} image={element.image}/>
-})
+const Grid = ({ data }) => {
+    const dataElements = data.map(element => {
+        return <Modal key={element.id} image={element.image} />;
+    });
 
     return (
         <div>
@@ -52,7 +49,7 @@ const dataElements = data.map(element => {
             </div>
             <div className='grid grid-cols-4 pl-32 pr-32'>{dataElements}</div>
         </div>
-    )
-}
+    );
+};
 
-export default Grid
+export default Grid;
