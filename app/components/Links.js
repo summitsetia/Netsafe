@@ -46,7 +46,7 @@ const Links = () => {
     };
 
     return (
-        <div className='bg-[#F89005]'>
+        <div className='bg-[#F89005] font-custom'>
             <div className='flex justify-center pt-8'>
                 <button className="bg-white text-[#18B4BB] text-2xl font-semibold py-4 px-8 rounded-md shadow-md hover:bg-[#18223C]" onClick={updateLinks}>More Links</button>
             </div>

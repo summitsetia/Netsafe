@@ -11,14 +11,14 @@ const Modal = ({ galleryImage , headerText, bodyText}) => {
 
     return (
         <div>
-            <div>
+            <div className='px-16'>
                 <Image
                     height={250}
                     width={250}
                     src={galleryImage} 
                     alt="Open Modal"
                     onClick={toggleModal} 
-                    className="cursor-pointer rounded-md border-4 border-[#18223C]" 
+                    className="cursor-pointer rounded-md border-4 border-[#18223C] w-96 h-48" 
                 />
             </div>
 
@@ -54,9 +54,11 @@ const Grid = ({ data }) => {
     return (
         <div>
             <div className='flex justify-center pb-12'>
-                <h1 className='text-8xl'>Tips</h1>
+                <h1 className='text-8xl font-bold'>Gallery</h1>
             </div>
-            <div className='grid grid-cols-3 gap-8 px-32 '>{dataElements}</div>
+            <div className='flex justify-center'>
+                <div className='grid grid-cols-3 gap-8 space-x '>{dataElements}</div>
+            </div>
         </div>
     );
 };

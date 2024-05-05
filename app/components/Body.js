@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const Body = ({ bodyItems }) => {
     return (
-        <div className="py-32 px-48 bg-[#18B4BB]" id="target-component">
+        <div className="py-32 px-48 bg-[#18B4BB] font-custom" id="target-component ">
             <div className=" flex justify-between pb-32 " >
                 <div className='flex-shrink-0 flex-grow-0 pr-12'>
                     <Image
@@ -17,7 +17,7 @@ const Body = ({ bodyItems }) => {
                 />
                 </div>
                 <div>
-                <h1 className="text-6xl font-bold text-[#18223C]" >Balance Of Gaming</h1>
+                <h1 className="text-6xl font-bold text-[#18223C font-bold" >Balance Of Gaming</h1>
                     <p className='text-white text-base'>
                         Balance of gaming refers to the balance between gaming and real life activities.
                         <br></br>
@@ -44,7 +44,7 @@ const Body = ({ bodyItems }) => {
                 />
                 </div>
                 <div >
-                    <h1 className="text-6xl font-bold text-[#18223C]">How Does It Affect You</h1>
+                    <h1 className="text-6xl font-bold text-[#18223C] ">How Does It Affect You</h1>
                     <p className='text-white text-base'>
                         Gaming addiction is excessive & conpulsive gaming which inteferes with daily life activities.
                         <br></br>

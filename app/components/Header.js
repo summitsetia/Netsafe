@@ -4,7 +4,7 @@ import React from 'react';
 const Header = ({ headerItems }) => {
     return (
         <div>
-            <div className="flex relative py-32" style={{ backgroundImage: `url(${headerItems.image3})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+            <div className="flex relative py-32 font-custom" style={{ backgroundImage: `url(${headerItems.image3})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
                 <div className="absolute inset-0 bg-black bg-opacity-75 z-0"></div> 
                 <div className="py-12 pl-48 max-w-4xl pr-64 relative ">
                     <h1 className="text-8xl font-bold text-white pb-4">Digital Wellbeing</h1>
@@ -19,7 +19,7 @@ const Header = ({ headerItems }) => {
                     </p>
 
                     <div className='flex space-x-4'>
-                        <button><a href="#target-component" className='bg-white text-[#18B4BB] font-semibold py-2 px-6 rounded-md shadow-md hover:bg-[#18223C]'>Scroll</a></button>
+                        <button><a href="#target-component" className='bg-white  text-[#18B4BB] font-semibold py-2 px-6 rounded-md shadow-md hover:bg-[#18223C]'>Scroll</a></button>
                         <button><a href="#another-component" className='bg-white text-[#18B4BB] font-semibold py-2 px-6 rounded-md shadow-md hover:bg-[#18223C]'>Scroll</a></button>
                         <button><a href="#more-component" className='bg-white text-[#18B4BB] font-semibold py-2 px-6 rounded-md shadow-md hover:bg-[#18223C]'>Links</a></button>
                     </div>

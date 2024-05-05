@@ -11,7 +11,8 @@ const page = () => {
     titleText: "Balance Of Gaming",
     blurbText: "A balance of gaming and other actitivites is essential to enjoy benefits while minimizing risks for your digital wellbeing",
     video:"/images/gaming.mp4",
-    image:"/images/image1.jpg",
+    image1:"/images/gamingA.jpeg",
+    image2:"/images/realLife.jpeg",
     firstHeaderText: "Gaming Addiction",
     secondHeaderText: "Real Life Activities",
     firstParagraphText:"According to the latest data, there are approximately 3.32 billion active video gamers worldwide. Up to 4% of gamers are currently addicted to playing video games. This is a huge number and a prominent issue that needs to be addressed. Gaming addiction is a condition where people become overly obsessed with playing video games, neglecting other areas of their life. People who have this disorder experience withdrawal symptoms when not playing and continuing to game despite negative consequences. This addiction can lead to problems in relationships, school or work, and personal health. Gaming can be fun and it has it's positives but there needs to be a balance.",
@@ -32,7 +33,7 @@ const page = () => {
 
 ]
   return (
-    <div>
+    <div className='font-custom'>
       <Navbar />
       <Hero data={balanceData}/>
       <Introduction data={balanceData} />

@@ -7,28 +7,30 @@ const Introduction = ({data}) => {
             <div className='flex justify-between'>
                 <div className="flex-shrink-0 flex-grow-0">
                     <Image
-                    width={500}
-                    height={500}
-                    src={data.image}
+                    width={350}
+                    height={350}
+                    src={data.image1}
                     alt="Hello"
+                    className='rounded-md border-2'
                     />               
                 </div>
-                <div>
-                    <h1 className='text-6xl font-bold text-[#18223C]'>{data.firstHeaderText}</h1>
+                <div className='pl-8'>
+                    <h1 className='text-6xl font-bold text-[#18223C] pb-2'>{data.firstHeaderText}</h1>
                     <p className='text-base text-white'>{data.firstParagraphText}</p>
                 </div>
             </div>
-            <div className="flex justify-between">
-                <div>
-                    <h1 className='text-6xl font-bold text-[#18223C]'>{data.secondHeaderText}</h1>
+            <div className="flex justify-between pt-8">
+                <div className='pr-8'>
+                    <h1 className='text-6xl font-bold text-[#18223C] pb-2'>{data.secondHeaderText}</h1>
                     <p className='text-base text-white'>{data.secondParagraphText}</p>
                 </div>
                 <div className='flex-shrink-0 flex-grow-0'>
                     <Image
-                    width={500}
-                    height={500}
-                    src={data.image}
+                    width={350}
+                    height={350}
+                    src={data.image2}
                     alt="hello"
+                    className='rounded-md border-2'
                      />
                 </div>
             </div>
