@@ -23,7 +23,7 @@ const Navbar = () => {
         </Link>
         <div className="text-white flex pt-4">
           <Link className="pr-20" onClick={handleClick} href="/main">Balance Of Gaming</Link>
-          <Link className="mr-20" onClick={handleClick} href="/side">How Does it Affect You</Link>
+          <Link className="mr-20" onClick={handleClick} href="/side">How Does Gaming Affect You</Link>
         </div>
       </nav>
     </div>

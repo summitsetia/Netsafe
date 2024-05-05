@@ -4,15 +4,24 @@ import React from 'react';
 const Header = ({ headerItems }) => {
     return (
         <div>
-            <div className="flex relative pt-32" style={{ backgroundImage: `url(${headerItems.image3})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
+            <div className="flex relative py-32" style={{ backgroundImage: `url(${headerItems.image3})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}>
                 <div className="absolute inset-0 bg-black bg-opacity-75 z-0"></div> 
                 <div className="py-12 pl-48 max-w-4xl pr-64 relative ">
-                    <h1 className="text-8xl font-bold text-white pb-4">Lorem Ipsum</h1>
-                    <p className="text-white pb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <div className='space-x-4'>
-                        <button><a href="#target-component" className="bg-white text-pink-500 font-semibold py-2 px-6 rounded-md shadow-md hover:bg-pink-100">Hello</a></button>
-                        <button><a href="#another-component" className="bg-white text-pink-500 font-semibold py-2 px-6 rounded-md shadow-md hover:bg-pink-100">Hello</a></button>
-                        <button><a href="#more-component" className="bg-white text-pink-500 font-semibold py-2 px-6 rounded-md shadow-md hover:bg-pink-100">Hello</a></button>
+                    <h1 className="text-8xl font-bold text-white pb-4">Digital Wellbeing</h1>
+                    <p className="text-white pb-8">
+                        Gaming offers a way to allows us to immerse ourselves in a virtual world for purposes such as enjoyment, entertainment and to form social connections.
+                        <br></br>
+                        Digital Wellbeing refers to our overall health in the digital age, it involves finding a healthy balance between the potential benefits and harms of digital technology.
+                        <br></br>
+                        Gaming is an addicitive experience which can quite often lead to an unhealthy balance of digital technologies worsening ones digital wellbeing.
+                        <br></br>
+                        This website aims to provide information about the balance of gaming and learning how gaming effects us to improve our digital wellbeing.
+                    </p>
+
+                    <div className='flex space-x-4'>
+                        <button><a href="#target-component" className='bg-white text-[#18B4BB] font-semibold py-2 px-6 rounded-md shadow-md hover:bg-[#18223C]'>Scroll</a></button>
+                        <button><a href="#another-component" className='bg-white text-[#18B4BB] font-semibold py-2 px-6 rounded-md shadow-md hover:bg-[#18223C]'>Scroll</a></button>
+                        <button><a href="#more-component" className='bg-white text-[#18B4BB] font-semibold py-2 px-6 rounded-md shadow-md hover:bg-[#18223C]'>Links</a></button>
                     </div>
                 </div>
                 <div className='w-96 py-28 relative z-0'>

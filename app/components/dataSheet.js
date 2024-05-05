@@ -18,7 +18,7 @@ const dataSheet = [
         url: "https://kotaku.com/how-to-balance-video-games-with-real-life-5990380",
         img: "/images/dataimage3.jpg",
         headerText: "How To Balance Video Games With Real Life",
-        mainText:"You Never Have Time For Video Games When Growing Up So It's Time To Make Comprimises"
+        mainText:"You Never Have Time For Video Games When Growing Up So It's Time To Make Compromises"
     },
     {
         id: 4,
