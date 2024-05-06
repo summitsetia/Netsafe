@@ -6,12 +6,12 @@ import Link from 'next/link'
 
 const Body = ({ bodyItems }) => {
     return (
-        <div className="py-32 px-48 bg-[#18B4BB] font-custom" id="target-component ">
+        <div className="py-32 px-48 bg-[#18B4BB] font-custom" id="target-component">
             <div className=" flex justify-between pb-32 " >
                 <div className='flex-shrink-0 flex-grow-0 pr-12'>
                     <Image
                     src={bodyItems.image1}
-                    alt="hello"
+                    alt="Balance Of Gaming"
                     width={600}
                     height={600}
                 />
@@ -38,7 +38,7 @@ const Body = ({ bodyItems }) => {
                 <div className='flex-shrink-0 flex-grow-0 pr-12'>
                     <Image
                     src={bodyItems.image1}
-                    alt="hello"
+                    alt="How Does It Affect You"
                     width={600}
                     height={600}
                 />

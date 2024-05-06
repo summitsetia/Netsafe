@@ -13,6 +13,8 @@ const page = () => {
     video:"/images/gaming.mp4",
     image1:"/images/gamingA.jpeg",
     image2:"/images/realLife.jpeg",
+    alt1:"Gaming Addiction",
+    alt2:"Real Life Activities",
     firstHeaderText: "Gaming Addiction",
     secondHeaderText: "Real Life Activities",
     firstParagraphText:"According to the latest data, there are approximately 3.32 billion active video gamers worldwide. Up to 4% of gamers are currently addicted to playing video games. This is a huge number and a prominent issue that needs to be addressed. Gaming addiction is a condition where people become overly obsessed with playing video games, neglecting other areas of their life. People who have this disorder experience withdrawal symptoms when not playing and continuing to game despite negative consequences. This addiction can lead to problems in relationships, school or work, and personal health. Gaming can be fun and it has it's positives but there needs to be a balance.",
@@ -32,9 +34,14 @@ const page = () => {
     {id:9, galleryImage: "/images/gridImage9.jpeg", headerText:"Hobbies", bodyText:"Besides gaming, real life hobbies should be one of your priorities. Hobbies allow you to diversify your interests as it encourages exploration of new activities, skills and passions. Immersing yourself solely in gaming can also lead to burnout and fatigue, affecting your mental state."},
 
 ]
+
+const navbarData = {
+  data1: false,
+  data2: true
+}
   return (
     <div className='font-custom'>
-      <Navbar />
+      <Navbar data={navbarData}/>
       <Hero data={balanceData}/>
       <Introduction data={balanceData} />
       <Grid data={gridData}/>

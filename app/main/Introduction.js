@@ -3,14 +3,14 @@ import Image from 'next/image';
 
 const Introduction = ({data}) => {
     return (
-        <div className='py-32 px-48 bg-[#18B4BB]'>
+        <div className='py-32 px-48 bg-[#18B4BB]' id="target-component">
             <div className='flex justify-between'>
                 <div className="flex-shrink-0 flex-grow-0">
                     <Image
                     width={350}
                     height={350}
                     src={data.image1}
-                    alt="Hello"
+                    alt={data.alt1}
                     className='rounded-md border-2'
                     />               
                 </div>
@@ -29,7 +29,7 @@ const Introduction = ({data}) => {
                     width={350}
                     height={350}
                     src={data.image2}
-                    alt="hello"
+                    alt={data.alt2}
                     className='rounded-md border-2'
                      />
                 </div>

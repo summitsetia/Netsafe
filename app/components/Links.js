@@ -4,17 +4,17 @@ import Image from 'next/image'
 import dataSheet from "./dataSheet";
 import Link from 'next/link'
 
-const Boxes = ({ headerText, image, mainText, url }) => {
+const Boxes = ({ headerText, image, mainText, url , alt}) => {
     return (
         <div className="basis-full border-2 border-white rounded-lg p-4" id="more-component">
             <div className='flex justify-center'>
                 <Link href={url}>
                 <Image
                 src={image}
-                alt="Column Image"
+                alt="Link To Website"
                 width={272}
                 height={185}
-                className='rounded-lg'
+                className='rounded-lg hover:border-4 hover:animate-pulse'
                 />
                 </Link>
             </div>

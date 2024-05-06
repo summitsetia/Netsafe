@@ -11,6 +11,8 @@ const page = () => {
     video:"/images/gaming.mp4",
     image1:"/images/positives.jpeg",
     image2:"/images/neagatives.jpeg",
+    alt1:"Positives Of Gaming",
+    alt2:"Negatives Of Gaming",
     firstHeaderText: "Positives Of Gaming",
     secondHeaderText: "Negatives Of Gaming",
     firstParagraphText:"Gaming offers various positive aspects that contribute to personal development, entertainment, and social interactions. Gaming can improve cognitive abilities such as problem-solving, critical thinking, and strategic planning.Online multiplayer games provide opportunities for social interaction and collaboration with players from around the world. Gaming serves as a form of relaxation and stress relief for many individuals. Immersing oneself in a virtual world can offer a temporary escape from real-life stressors. Ultimately, gaming can have various benefits if it is balanced correctly with other activities. However, gaming has a very addicitve nature which leads people to develop a gaming disorder as they struggle with addiction leading to more disadvantages than benefits. ",
@@ -28,9 +30,15 @@ const page = () => {
     {id:8, galleryImage: "/images/galleryImage8.jpeg", headerText:"Loss Of Time", bodyText:"A gaming addiction can lead to a significant loss of time as peope become absorbed in the activity. This leads to ignorance of other responsibilities and interests. These responsibilities can be important obligations which may lead to regret or frustration later on."},
     {id:9, galleryImage: "/images/galleryImage9.jpeg", headerText:"Career", bodyText:"A gaming addiction can negativley impact someones future career due to academic underachievemnt, difficuly meeting deadlines and engaging in potential career oportunitiies. This can lead to a lack of advancement in their chosen career path. They may hinder their life sucess and aspirations due to this addiction."}
 ]
+
+const navbarData = {
+  data1: true,
+  data2: false
+}
+
   return (
     <div className='font-custom'>
-        <Navbar />
+        <Navbar data={navbarData}/>
         <Hero data={affectData}/>
         <Introduction data={affectData}/>
         <Grid data={gridData} />

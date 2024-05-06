@@ -19,15 +19,15 @@ const Header = ({ headerItems }) => {
                     </p>
 
                     <div className='flex space-x-4'>
-                        <button><a href="#target-component" className='bg-white  text-[#18B4BB] font-semibold py-2 px-6 rounded-md shadow-md hover:bg-[#18223C]'>Scroll</a></button>
-                        <button><a href="#another-component" className='bg-white text-[#18B4BB] font-semibold py-2 px-6 rounded-md shadow-md hover:bg-[#18223C]'>Scroll</a></button>
+                        <button><a href="#target-component" className='bg-white  text-[#18B4BB] font-semibold py-2 px-6 rounded-md shadow-md hover:bg-[#18223C]'>Balance</a></button>
+                        <button><a href="#another-component" className='bg-white text-[#18B4BB] font-semibold py-2 px-6 rounded-md shadow-md hover:bg-[#18223C]'>Affect</a></button>
                         <button><a href="#more-component" className='bg-white text-[#18B4BB] font-semibold py-2 px-6 rounded-md shadow-md hover:bg-[#18223C]'>Links</a></button>
                     </div>
                 </div>
                 <div className='w-96 py-28 relative z-0'>
                     <Image
                         src={headerItems.image1}
-                        alt="hello"
+                        alt="Gaming In the Dark"
                         width={2000}
                         height={2000}
                     />

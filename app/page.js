@@ -15,11 +15,15 @@ const bodyItems = {
 
 }
 
+const navbarData = {
+  data1: true,
+  data2: true
+}
 
 export default function Main() {
   return (
     <div>
-      <Navbar />
+      <Navbar data={navbarData}/>
       <Header headerItems={headerItems}/> 
       <Body  bodyItems={bodyItems}/>
       <Links />
